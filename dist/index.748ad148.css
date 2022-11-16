@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero-image {
+  background-image: url("SneakerCollection.3c9966ac.jpeg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 90% 30%;
+  padding-top: 500px;
+  padding-bottom: 750px;
+}
+
+.hero-text {
+  text-align: center;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body {
+  color: #000;
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+  font-family: Permanent Marker;
+  display: flex;
+}
+
+h2 {
+  color: #000;
+  text-align: center;
+}
+
+section {
+  flex-direction: center;
+}
+
+#content {
+  overflow: auto;
+}
+
+#feature, #footer {
+  margin: 5%;
+}
+
+.column1, .column2, .column3 {
+  width: 31.3%;
+  float: left;
+  border-block: #000;
+  margin: 1%;
+}
+
+.column3 {
+  margin-right: 0%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  display: flex;
+  position: relative;
+}
+
+.contact-box {
+  max-width: 850px;
+  text-align: center;
+  background-color: #fff;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  box-shadow: 0 0 19px 5px #00000030;
+}
+
+.left {
+  height: 100%;
+  background: url("Ali.276cd0b0.jpeg") center / cover no-repeat;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.field {
+  width: 100%;
+  background-color: #e6e6e699;
+  border: 2px solid #0000;
+  outline: none;
+  margin-bottom: 22px;
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  transition: all .3s;
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.btn {
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  background-color: #000;
+  border: none;
+  outline: none;
+  padding: .5rem 1rem;
+  font-size: 1.1rem;
+  transition: all .3s;
+}
+
+.btn:hover {
+  background-color: gold;
+}
+
+.field:focus {
+  background-color: #fff;
+  border: 2px solid #1e55fa78;
+}
+
+@media screen and (max-width: 880px) {
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .left {
+    height: 200px;
+  }
+}
+
+#footer {
+  background-color: #efefef;
+  padding: .5em 0;
+  list-style: none;
+}
+
+#feature, .article {
+  height: 10 em;
+  background-color: #efefef;
+  margin-bottom: 1em;
+}
+
+@media (max-width: 960px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .column1, .column2, .column3 {
+    width: 100%;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 40px;
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=index.748ad148.css.map */

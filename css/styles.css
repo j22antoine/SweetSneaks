@@ -36,6 +36,12 @@ section {
     flex-direction: center;
 }
 
+.inputdesign{
+  border: solid;
+  padding: 5px 10px;
+margin: 5px;
+}
+
     #content {overflow: auto;}
     #feature, #footer {
         margin: 5%;}
@@ -78,7 +84,6 @@ section {
     padding: 25px 40px;
   }
   
-  
   .field{
     width: 100%;
     border: 2px solid rgba(0, 0, 0, 0);
@@ -89,7 +94,6 @@ section {
     margin-bottom: 22px;
     transition: .3s;
   }
-  
   
   textarea{
     min-height: 150px;

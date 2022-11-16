@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAM,SAAS,SAAS,aAAa,CAAC","sources":["js/script.js"],"sourcesContent":["const button = document.querySelector(\".button\");\r\n\r\n"],"names":[],"version":3,"file":"index.1c974c2f.js.map","sourceRoot":"/__parcel_source_root/"}
