@@ -1,22 +1,19 @@
 var xValues = [
-    "Jordan 1 Lows",
-    "Jordan 1 Mids",
-    "Jordan 1 Highs",
-    "Adidas Boost"
+    "Jordans",
+    "Adidas",
+    "Other"
 ];
 var yValues = [
-    55,
-    49,
-    44,
-    24
+    26,
+    17,
+    15
 ];
 var barColors = [
-    "#cf311c",
-    "#ecdf25",
-    "#3225ec",
-    "#050505fd"
+    "red",
+    "green",
+    "blue"
 ];
-new CharacterData("mychart", {
+let myChart = new Chart("myChart", {
     type: "bar",
     data: {
         labels: xValues,
@@ -28,11 +25,27 @@ new CharacterData("mychart", {
         ]
     },
     options: {
+        legend: {
+            display: false
+        },
         title: {
             display: true,
             text: "Sneaker Collection Distribution"
         }
     }
 });
+function updateChart() {
+    const inputdata = document.getElementById("inputdata");
+    const inputlabel = document.getElementById("inputlabel");
+    console.log(inputdata);
+    console.log(inputdata.value);
+    // myChart.data.datasets[0].data.push(inputdata.value);
+    // myChart.data.labels.push(inputlabel.value);
+    yValues[0] += +inputdata.value;
+    if (inputlabel.value.toLowerCase() === "jordans") yValues[0] += +inputdata.value;
+    else if (inputlabel.value.toLowerCase() === "adidas") yValues[1] += +inputdata.value;
+    else yValues[2] += +inputdata.value;
+    myChart.update();
+} //getting error that updateChart is not a function and that 'inputdata' cannot be redeclared.  Don't know what that means. 
 
 //# sourceMappingURL=index.410512bc.js.map

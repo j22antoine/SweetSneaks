@@ -41,19 +41,19 @@
                 <p><h2>My Faves</h2></p>
                 <img src="images/Sunshinny_502.jpeg" width="360" height="500" />
                 <figcaption> Yellow Strike Jordan 1 Low</figcaption>
-                <button id="yellowStrike" onclick="displayPrice ()">Check Retail Value</button>
+                <button id="yellowStrike" onclick="this.innerText=shoes[1].retailPrice">Check Retail Value</button>
             </div>
             <div class="article column2">
                 <p><h2>New Edition</h2></p>
                 <img src="images/ali2.jpeg" width="360" height="500" />
                 <figcaption>Military Black Jordan 4</figcaption>
-               <button id="militaryBlack" onclick="displayPrice ()">Check Retail Value</button>
+               <button id="militaryBlack" onclick="this.innerText=shoes[0].retailPrice">Check Retail Value</button>
             </div>
             <div class="article column3">
                 <p><h2>My Grails</h2></p>
                 <img src="images/Patent_Leather.jpeg" width="360" height="500" />
                 <figcaption>Patent Bred Jordan 1 High</figcaption>
-                <button id="PatentBred" onclick="displayPrice ()">Check Retail Value</button>
+                <button id="PatentBred" onclick="this.innerText=shoes[1].retailPrice">Check Retail Value</button>
             </div>
 
 <!--CHART-->
@@ -64,23 +64,23 @@
             <div class="chartBox">
             <canvas id="myChart" style="width:100%;max-width:700px"></canvas></div>
           <div class="inputBox">
-            <input type="number" class="inputdesign" placeholder="Add # of New Addition" id="inputdata">
+            <input type="number" class="inputdesign" placeholder="Add # of New Additions" id="inputdata">
             <input type="text" class="inputdesign" placeholder="Add New Addition" id="inputlabel">
-          <button onclick="updateChart()" id="insertdata">Add Sneaker</button>
+          <button onclick="updateChart()" id="insertdata">Add Sneaker(s)</button>
           </div>
 
           <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
 <!--FORM-->
             <div class="container"></div>
-            <form id="contactForm" action="mailto:janelle.antoine@gmail.com" method="post" enctype="text/plain">
+          <form id="contactForm" action="mailto:janelle.antoine@gmail.com" method="post" enctype="text/plain">
                 <div class="contact-box">
                     <div class="left"></div>
                     <div class="right">
-                        <h2>Wanna Trade or Buy? Contact Me!</h2>
+                       <h2>Wanna Trade or Buy? Contact Me!</h2>
                         <input type="text" class="field" placeholder="Your Name">
-                        <input type="email" class="field" id="email" placeholder="Your Email" onkeydown="valid_email()">
+                        <input type="text" class="field" id="email" placeholder="Your Email">
                         <textarea placeholder="Message" class="field"></textarea>
-                        <button class="btn">Send</button>
+                        <button onclick="validate()" type="button">Submit</button>
                     </div>
                 </div>
 
@@ -92,8 +92,8 @@
 
 <!--JAVASCRIPT-->
 <script src="js/chart.js"></script>       
-<!--<script type="module" src="js/index.js"></script>
-<script src="js/script.js"></script>
+<script type= module src="js/index.js"></script>
+<!--<script src="js/script.js"></script>-->
 <script src="js/validation.js"></script>
     </body>
 </html>

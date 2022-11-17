@@ -3,7 +3,7 @@ var xValues = ["Jordans", "Adidas", "Other"];
 var yValues = [26, 17, 15];
 var barColors = ["red", "green","blue"];
 
-new Chart("myChart", {
+let myChart = new Chart("myChart", {
   type: "bar",
   data: {
     labels: xValues,
@@ -22,12 +22,22 @@ new Chart("myChart", {
 });
 
 function updateChart(){
-const inputdata = document.getElementbyID('inputdata');
-const inputlabel = document.getElementbyID('inputlabel');
+const inputdata = document.getElementById('inputdata');
+const inputlabel = document.getElementById('inputlabel');
 console.log(inputdata);
 console.log(inputdata.value);
-myChart.data.datasets[0].data.push(inputdata.value);
-myChart.data.labels.push(inputlabel.value);
+// myChart.data.datasets[0].data.push(inputdata.value);
+// myChart.data.labels.push(inputlabel.value);
+yValues[0] += +inputdata.value
+if(inputlabel.value.toLowerCase() === 'jordans'){
+  yValues[0] += +inputdata.value
+}else if(inputlabel.value.toLowerCase() === 'adidas'){
+  yValues[1] += +inputdata.value
+}else{
+  yValues[2] += +inputdata.value
+}
+
+
 
 myChart.update();
 }

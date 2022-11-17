@@ -1,5 +1,14 @@
-function valid_email(email) {
-    return email.match(/^([\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+\.)*[\w\!\#$\%\&\'\*\+\-\/\=\?\^\`{\|\}\~]+@((((([a-z0-9]{1}[a-z0-9\-]{0,62}[a-z0-9]{1})|[a-z])\.)+[a-z]{2,6})|(\d{1,3}\.){3}\d{1,3}(\:\d{1,5})?)$/i);
+function validate() {
+    var email = document.getElementById("email").value;
+    console.log(email);
+    var pattern = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+    if (email.match(pattern)) {
+        alert("Thanks, Valid Email");
+        return true;
+    } else {
+        alert("Please enter a valid Email");
+        return false;
+    }
 }
 
 //# sourceMappingURL=index.74a4de58.js.map
