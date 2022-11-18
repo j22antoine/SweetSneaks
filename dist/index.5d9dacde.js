@@ -2274,9 +2274,9 @@ http.METHODS = [
 ];
 
 },{"./lib/request":"csW06","./lib/response":"47huq","xtend":"93zjj","builtin-status-codes":"iqSVp","url":"7qjc7"}],"csW06":[function(require,module,exports) {
-var process = require("process");
 var Buffer = require("buffer").Buffer;
 var global = arguments[3];
+var process = require("process");
 var capability = require("./capability");
 var inherits = require("inherits");
 var response = require("./response");

@@ -139,15 +139,32 @@ margin: 5px;
         background-color: #efefef;}
 
         @media (max-width: 960px) {
-            .toggle-button{
-                display: flex;
-            }
+          
         .column1, .column2, .column3  {
             display: flex;
             justify-content: space-between;
             padding: 40px;
             gap: 20px;
             width: 100%;
-        }}
+        }
+      }
+
+      /*Small Screen*/
+  @media only screen and (max-width:600px) {
+    .section, body, .footer, .myChart, .contactForm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 0px;
+        padding: 10px;
+        width: 100%;
+    }
+    .column1, .column2, .column3 {
+      flex-direction: column;
+      align-items: center;
+     gap: 20px;
+}
+
+  }
 
     
