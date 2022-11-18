@@ -1,8 +1,8 @@
 # SweetSneaks
+Run Instructions: 
 
-Clone Repo from Github
-Files were bundled using parcel js
-run:
-npm i parcel
- npx parcel index.html
+1. Clone SweetSneaks Repo from Github
+2. Files were bundled using parcel js
+run: in command or terminal - npm i parcel
+run: npx parcel index.html
 view page at http://localhost:1234
